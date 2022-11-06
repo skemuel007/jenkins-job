@@ -1,7 +1,7 @@
-job('Nodejs Deployment') {
+job('Node Jenkins Docker Deploy') {
     scm {
-        git('git://github.com:skemuel007/jenkins-node-docker-demo.git') { node ->
-            node / gitConfigName('DSL User')
+        git('https://github.com/skemuel007/jenkins-node-docker-demo.git') { node ->
+            node / gitConfigName('skemuel007')
             node / gitConfigEmail('skemuel007@gmail.com')
         }
     }
