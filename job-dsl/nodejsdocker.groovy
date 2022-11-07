@@ -1,4 +1,4 @@
-job('Node Jenkins Docker Deploy') {
+job('Node Jenkins Docker Deploy 2') {
     scm {
         git('https://github.com/skemuel007/jenkins-node-docker-demo.git') { node ->
             node / gitConfigName('skemuel007')
